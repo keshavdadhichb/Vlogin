@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 300px;
+      padding: 20px;
+      background-color: #1e1e1e;
+      color: #f4f4f4;
+      margin: 0;
+      position: relative;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+    input {
+      width: calc(100% - 22px);
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #444;
+      border-radius: 4px;
+      background-color: #2a2a2a;
+      color: #f4f4f4;
+    }
+    button {
+      width: calc(100% - 22px);
+      padding: 10px;
+      background-color: #333;
+      color: #f4f4f4;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #555;
+    }
+    h3 {
+      color: #f4f4f4;
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+    .watermark {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      color: #888;
+      font-size: 12px;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+  <h3>Save Credentials</h3>
+  <input type="text" id="username" placeholder="Username" />
+  <input type="password" id="password" placeholder="Password" />
+  <button id="save">Save</button>
+  <div class="watermark">Made by Keshav Dadhich</div>
+  <script src="popup.js"></script>
+</body>
+</html>

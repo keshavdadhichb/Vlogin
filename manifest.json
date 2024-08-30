@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Vlogin - Automatic Quick Login",
+    "version": "1.0",
+    "description": "Automatically fills login credentials and enables quick login.",
+    "permissions": ["storage", "activeTab", "scripting"],
+    "icons": {
+      "48": "icon.png"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://vtop.vit.ac.in/vtop/login*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
